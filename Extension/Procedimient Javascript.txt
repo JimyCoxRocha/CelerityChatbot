@@ -1,0 +1,25 @@
+document.getElementsByClassName("message-out")
+a=document.getElementsByClassName("tSmQ1")
+a[0]
+
+Hacer lo mismo una vez cada minuto
+
+1) Escogemos todos los mensajes que cargaron.
+2) Verificamos si el último mensaje corresponde a uno que me enviaron.
+3) Si corresponde le asignamos la numeración (1)
+4) Verificamos si anterior elemento también la tiene.
+4.1) Si la tiene se asigna la numeración (2)
+4.2) Si no la tiene salimos del ciclo.
+
+
+******************************************************
+Prueba de ciclo
+
+for(var i=a[0].children.length-1; i >= 0; i--){
+	if(a[0].children[i].className == "_1RAno message-out focusable-list-item"){
+		alert("Mensaje que escribí yo");
+	}
+	else{
+		alert("Mensaje que vino");
+	}
+}
